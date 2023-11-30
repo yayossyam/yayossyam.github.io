@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIDAD4</title>
+    <link rel="stylesheet" href="/_UNIDAD4.css">
+</head>
+
+<body>
+    <nav class="navbaer">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">
+                    <img src="/1.LOGO.png" alt="logo" width="80px" height="auto">
+                </a>
+            </div>
+            <ul>
+                <li><a href="/HOME.html">Home</a></li>
+                <li><a href="/UNIDAD1.html">Unidad 1</a></li>
+                <li><a href="/UNIDAD2.html">Unidad 2</a></li>
+                <li><a href="/UNIDAD3.html">Unidad 3</a></li>
+                <li><a href="/UNIDAD4.html">Unidad 4</a></li>
+                <li><a href="/PRACTICA.html">PRACTICAS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav>
+        <!-- Aquí colocas tu barra de navegación con los enlaces a tus subtemas -->
+        <ul>
+            <li><a href="#subtema1">Subtema 1</a></li>
+            <li><a href="#subtema2">Subtema 2</a></li>
+            <li><a href="#subtema3">Subtema 3</a></li>
+            <li><a href="#subtema4">Subtema 4</a></li>
+            <li><a href="#subtema5">Subtema 5</a></li>
+            <li><a href="#subtema6">Subtema 6</a></li>
+            <li><a href="#subtema7">Subtema 7</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: green; font-style: italic; text-align: center;">Unidad 4. ASPECTOS BASICOS DE LA COMPUTACION
+        PARALELA</h1>
+
+
+    <section id="subtema1">
+        <!--Subtema 3.1-->
+        <h2 class="subtema"> 4.1 ASPECTOS BÁSICOS DE LA COMPUTACIÓN PARALELA</h2>
+        <p class="texto-gris-cursiva">Son instrucciones se ejecutan simultáneamente, operando sobre el
+            principio de problemas grandes, a menudo se pueden dividir en unos más pequeños, que luego son resueltos
+            simultáneamente (en
+            paralelo).
+        </p>
+        <p>Hay varias formas diferentes de computación paralela:</p>
+        <p>Paralelismo a nivel de bit: </p>
+        <p class="texto-gris-cursiva"> Se refiere a aumentar el tamaño de la palabra
+            del procesador para reducir el número de instrucciones
+        </p>
+
+        <p>Paralelismo a nivel de instrucción: </p>
+        <p class="texto-gris-cursiva"> Se refiere a la capacidad de los
+            procesadores para reordenar y combinar grupos de instrucciones que
+            luego son ejecutadas en paralelo sin cambiar el resultado del programa.
+        </p>
+
+        <p>Paralelismo de datos: </p>
+        <p class="texto-gris-cursiva"> Se refiere a la capacidad de los procesadores para
+            procesar múltiples datos al mismo tiempo.
+        </p>
+
+        <p>Grado de paralelismo:</p>
+        <p class="texto-gris-cursiva">Muy grueso: Programas.</p>
+        <p class="texto-gris-cursiva">Grueso: Subprogramas, tareas.</p>
+        <p class="texto-gris-cursiva">Fino: Instrucción.</p>
+        <p class="texto-gris-cursiva">Fino: Instrucción. Muy fino: Fases de instrucción.</p>
+
+        <h4>Existen modelos de consistencia: SISD, MISD, MIMD, ETC.</h4>
+        <p>Multiple Instruction, Single Data (MISD):</p>
+        <p class="texto-gris-cursiva">Hay múltiples elementos de procesamiento, en el que cada cual
+            tiene memoria privada del programa, pero se tiene acceso
+            común a una memoria global de información. Este modelo es muy restrictivo
+            y no se ha usado en ningún computador de tipo comercial.
+        </p>
+
+        <p>Single Instruction, Multiple Data (SIMD)</p>
+
+        <p class="texto-gris-cursiva">Hay múltiples elementos de procesamiento, en el que
+            cada cual tiene acceso privado a la memoria de
+            información (compartida o distribuida). Sin embargo, hay una sola memoria de programa, desde la cual una
+            unidad de procesamiento especial obtiene y despacha
+            instrucciones.</p>
+
+        <p>Multiple Instruction, Multiple Data (MIMD)</p>
+
+        <p class="texto-gris-cursiva">Hay múltiples unidades de procesamiento, en la cual
+            cada una tiene tanto instrucciones como información
+            separada. Cada elemento ejecuta una instrucción</p>
+        <img src="/u4. paralelismo.jpg" alt="">
+    </section>
+
+
+    <section id="subtema2">
+        <h2 class="subtema">4.2 TIPOS DE COMPUTACIÓN PARALELA</h2>
+        <h4 class="subtema"> Paralelismo a nivel de bit</h4>
+        <p>Se habla de paralelismo al nivel de bit, cuando se aumenta el tamaño de la palabra
+            del procesador (tamaño de la cadena de bits a procesar). Este aumento reduce el número de instrucciones que
+            tiene que ejecutar el procesador en variables cuyos tamaños sean mayores a la longitud de la cadena.
+        </p>
+
+        <h4 class="subtema"> 4.2 Paralelismo a nivel de instrucción</h4>
+        <p>Paralelismo a nivel de instrucción (ILP) es la ejecución paralela o simultánea de
+            una secuencia de instrucciones en un programa informático. Más específicamente, ILP se refiere al número
+            promedio de instrucciones ejecutadas por paso de esta ejecución paralela.
+            Paralelismo a nivel de instrucción (ILP) es la ejecución paralela o simultánea de una secuencia de
+            instrucciones en un programa informático. Más específicamente, ILP se refiere al número promedio de
+            instrucciones ejecutadas por paso de esta ejecución paralela.
+        </p>
+
+        <h4 class="subtema"> 4.2 Paralelismo de datos</h4>
+        <p>El paralelismo de datos es un paradigma de la programación concurrente que
+            consiste en subdividir el conjunto de datos de entrada a un programa, de manera que a cada procesador le
+            corresponda un subconjunto de esos datos.
+        </p>
+
+        <h4 class="subtema"> 4.2 Paralelismo de tareas</h4>
+        <p>Paralelismo de tareas es un paradigma de la programación concurrente que consiste
+            en asignar distintas tareas a cada uno de los procesadores de un sistema de cómputo. En consecuencia, cada
+            procesador efectuará su propia secuencia de operaciones. El paralelismo de tareas se representa mediante un
+            grafo de tareas, el cual es subdividido en subgrafos que son luego asignados a diferentes procesadores
+        </p>
+        <img src="/U4. PARALELISMO TAREAS.jpg" alt="">
+
+
+        <h2 class="subtema"> 4.2.1 Clasificación</h2>
+        <p>Las computadoras paralelas se pueden clasificar de acuerdo con el nivel
+            en el que el hardware soporta paralelismo. Esta clasificación es análoga
+            a la distancia entre los nodos básicos de cómputo.
+        </p>
+        <p>Computación multinúcleo: un procesador multinúcleo es un
+            procesador que incluye múltiples unidades de ejecución(núcleos) en el mismo chip
+        </p>
+        <p>Multiprocesamiento simétrico: un multiprocesador simétrico (SMP) es
+            un sistema computacional con múltiples procesadores idénticos que
+            comparten memoria y se conectan a través de un bus.
+        </p>
+        <p>Computación multinúcleo: un procesador multinúcleo es un
+            procesador que incluye múltiples unidades de ejecución(núcleos) en el mismo chip
+        </p>Computación en clúster: Un clúster es un grupo de ordenadores
+        débilmente acoplados que trabajan en estrecha colaboración, de modo
+        que en algunos aspectos pueden considerarse como un solo equipo.
+        </p>
+        </p>Procesadores vectoriales: pueden ejecutar la misma instrucción en
+        grandes conjuntos de datos.
+        </p>
+    </section>
+
+    <section id="subtema2">
+        <h2 class="subtema">4.2.2 Arquitectura de Computadoras secuenciales</h2>
+        <h4 class="subtema">Tipos de sistemas secuenciales</h4>
+        <p>En este tipo de circuitos entra un factor que no
+            se había considerado en los circuitos
+            combinacionales, dicho factor es el tiempo,
+            según como manejan el tiempo se pueden
+            clasificar en: circuitos secuenciales síncronos y
+            circuitos secuenciales asíncronos.
+        </p>
+
+        <h4 class="subtema "> 4.2.2 Circuitos secuenciales asíncronos</h4>
+        <p>Los cambios de estados ocurren
+            al ritmo natural asociado a las compuertas lógicas utilizadas en su
+            implementación, lo que produce retardos en cascadas entre los
+            biestables del circuito, es decir no utilizan elementos especiales de
+            memoria
+        </p>
+
+        <h4 class="subtema"> 4.2.2 CCircuitos secuenciales síncronos</h4>
+        <p>Solo permiten un cambio de
+            estado en los instantes marcados o autorizados por una señal de
+            sincronismo de tipo oscilatorio denominada reloj (cristal o circuito
+            capaz de producir una serie de pulsos regulares en el tiempo).
+        </p>
+
+        <h4 class="subtema "> 4.2.2 Circuitos secuenciales síncronos</h4>
+        <p>Solo permiten un cambio de
+            estado en los instantes marcados o autorizados por una señal de
+            sincronismo de tipo oscilatorio denominada reloj (cristal o circuito
+            capaz de producir una serie de pulsos regulares en el tiempo).
+        </p>
+    </section>
+
+
+    <section id="subtema3">
+        <h2 class="subtema">4.2.3 Organización de direcciones
+            de memoria</h2>
+        <p>La memoria principal en un ordenador en paralelo puede ser
+            compartida entre todos los elementos de
+            procesamiento en un único espacio de direcciones.</p>
+        <img src="/u4.cpu.jpg" alt="">
+    </section>
+
+
+    <section id="subtema4">
+        <h2 class="subtema">4.3 Sistema de memoria compartida</h2>
+        <p>Los sistemas de memoria compartida son aquellos
+            en los que múltiples unidades de procesamiento
+            comparten un espacio de direcciones de memoria
+            común. Esto permite a los procesos comunicarse y
+            compartir datos a través de la memoria compartida,
+            lo que simplifica la programación paralela.</p>
+        <img src="/u4. multiprocesadores.jpg" alt="">
+
+        <h2 class="subtema">Estructura de los multiprocesadores de memoria compartida</h2>
+        <p class="texto-gris-cursiva">Estructura de los multiprocesadores de memoria compartida.
+            En la
+            arquitectura UMA los procesadores se conectan a la memoria
+            a través de un bus, una red multietapa o un conmutador de
+            barras cruzadas
+        </p>
+        <p>Los procesadores tipo NUMA (Non Uniform Memory Access)
+            presentan tiempos de acceso a la memoria compartida que
+            dependen de la ubicación del elemento de proceso y la memoria.
+        </p>
+        <img src="/u4.numa.jpg" alt="">
+
+        <h2 class="subtema">4.3.1 Redes de Interconexión Dinámicas ó Indirectas</h2>
+        <p class="texto-gris-cursiva">Las redes de interconexión
+            dinámicas o indirectas se refieren a los esquemas utilizados para conectar y
+            comunicar los componentes de un sistema computacional, como
+            procesadores, memoria y dispositivos de entrada/salida.
+            En una red de interconexión dinámica, los nodos pueden comunicarse
+            indirectamente mediante saltos a través de otros nodos intermedios. Esto
+            permite una comunicación eficiente y escalable en sistemas con un gran
+            número de componentes.
+        </p>
+
+        <h2 class="subtema">4.3.1.1 Redes de Medio Compartido</h2>
+        <p class="texto-gris-cursiva">Es un tipo de arquitectura de red en la que múltiples dispositivos comparten un
+            medio de comunicación común para enviar y recibir datos. En esta arquitectura,
+            los dispositivos se conectan físicamente al mismo medio de transmisión.
+            La conexión por bus compartida es un tipo de red muy común al momento de
+            usar servidores o computadoras personales.
+        </p>
+
+        <h2 class="subtema">Protocolo de transferencia de ciclo partido</h2>
+        <p class="texto-gris-cursiva">La operación de lectura se divide en dos
+            transacciones no continuas de acceso
+            al bus. La responsabilidad del arbitraje se distribuye por los diferentes procesadores
+            conectados al bus.
+        </p>
+        <img src="/u4. protocolo.jpg" alt="">
+
+        <h2 class="subtema">4.3.1.2 Redes conmutadas</h2>
+        <p>CONEXIÓN POR CONMUTADORES CROSSBAR: </p>
+        <p class="texto-gris-cursiva">Cada procesador y cada módulo de memoria tienen su propio bus.
+            Existe un
+            conmutador (S) en los puntos de intersección que permite conectar un bus de memoria
+            con un bus de procesador. Para evitar conflictos cuando más de un procesador
+            pretende acceder al mismo módulo de memoria se establece un orden de prioridad. Se
+            trata de una red sin bloqueo con una conectividad completa pero de alta complejidad.
+        </p>
+        <img src="/u4.conexion1.jpg" alt="">
+
+
+        <h2 class="subtema">4.3.1.2 Redes conmutadas</h2>
+        <p>CONEXIÓN POR RED MULTIETAPA: </p>
+        <p class="texto-gris-cursiva"> Representan una alternativa intermedia de conexión entre el bus y el crossbar.
+            Es de menor complejidad que el crossbar pero mayor que el bus simple. La conectividad es mayor que la del
+            bus simple pero menor que la del crossbar.
+        </p>
+        <img src="/u4.conexion2.jpg" alt="">
+
+
+
+        <h2 class="subtema">4.4 SISTEMAS DE MEMORIA DISTRIBUIDA:
+            MULTIPROCESADORES</h2>
+        <h4 class="subtema">4.4 Sistemas de memoria distribuida: multiprocesadores</h4>
+        <p class="texto-gris-cursiva">
+            Los sistemas de memoria distribuida o multicomputadores pueden ser de dos
+            tipos básicos. El primer de ellos consta de un único computador con múltiples
+            CPUs comunicadas por un bus de datos mientras que en el segundo se utilizan
+            múltiples computadores, cada uno con su propio procesador, enlazados por
+            una red de interconexión más o menos rápida.
+        </p>
+
+        <h4 class="subtema">4.4.1 Red de interconexión estática</h4>
+        <p>Los multicomputadores utilizan redes estáticas con enlaces directos
+            entre nodos. Cuando un nodo recibe un mensaje lo procesa si viene
+            dirigido a dicho nodo. Si el mensaje no va dirigido al nodo receptor lo
+            reenvía a otro por alguno de sus enlaces de salida siguiendo un
+            protocolo de encaminamiento.</p>
+        <p class="texto-gris-cursiva">Propiedas más significativas: </p>
+        <p>Topologia de la red</p>
+        <p>DIÁMETRO DE LA RED</p>
+        <p>LATENCIA</p>
+        <p>ANCHO DE BANDA</p>
+        <p>ESCALABILIDAD</p>
+        <p>GRADO DE UN NODO</p>
+        <p>ALGORITMO DE ENCAMINAMIENTO</p>
+        <img src="/u4.estatica.jpg" alt="">
+
+
+        <h2 class="subtema">4.5 Casos de Estudio</h2>
+        <h3 class="subtema">4.5 Casos de Estudio</h3>
+        <p class="subtema">Por numerosos motivos, el procesamiento distribuido se ha convertido en
+            un área de gran importancia e interés dentro de la ciencia de la
+            computación, produciendo profundas transformaciones en las líneas de
+            investigación y desarrollo. Interesa realizar investigación en la especificación, transformación,
+            optimización y evaluación de algoritmos distribuidos y paralelos.
+        </p>
+        <img src="/u4.fin.jpeg" alt="">
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <h5>&copy; /Alumno: Hernandez Olivares Yahir. /Matricula: 21051445</h5>
+    </footer>
+</body>
+
+</html>
